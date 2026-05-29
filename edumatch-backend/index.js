@@ -20,6 +20,8 @@ app.use('/api/profil', require('./routes/profilRoutes'));
 
 app.use('/api/jadwal', require('./routes/jadwalRoutes'));
 
+app.use('/api/pembayaran', require('./routes/paymentRoutes'));
+
 app.get('/', (req, res) => {
   res.json({ message: 'EduMatch API is running' });
 });
