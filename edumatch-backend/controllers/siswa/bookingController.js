@@ -1,5 +1,5 @@
-const { createBooking, getBookingBySiswa, getBookingById } = require('../models/bookingModel');
-const pool = require('../config/db');
+const { createBooking, getBookingBySiswa, getBookingById } = require('../../models/siswa/bookingModel');
+const pool = require('../../config/siswa/db');
 
 
 const buatBooking = async (req, res) => {

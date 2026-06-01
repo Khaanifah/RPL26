@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
-const pool = require('../config/db');
-const { getProfilTutor, updateProfilTutor, updatePassword } = require('../models/profilModel');
-const { findUserByEmail } = require('../models/userModel');
+const pool = require('../../config/tutor/db');
+const { getProfilTutor, updateProfilTutor, updatePassword } = require('../../models/tutor/profilModel');
+const { findUserByEmail } = require('../../models/tutor/userModel');
 
 const lihatProfil = async (req, res) => {
     try {

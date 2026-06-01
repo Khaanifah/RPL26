@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
-const { getProfilSiswa, updateProfilSiswa, updatePassword } = require('../models/profilModel');
-const { findUserByEmail } = require('../models/userModel');
+const { getProfilSiswa, updateProfilSiswa, updatePassword } = require('../../models/siswa/profilModel');
+const { findUserByEmail } = require('../../models/siswa/userModel');
 
 const lihatProfil = async (req, res) => {
     try {
@@ -52,7 +52,7 @@ const gantiPassword = async (req, res) => {
         }
 
         const { findUserByEmail } = require('../models/userModel');
-        const pool = require('../config/db');
+        const pool = require('../../config/siswa/db');
         const userResult = await pool.query(
             `SELECT * FROM USERS WHERE id_user = $1`,
             [id_user]

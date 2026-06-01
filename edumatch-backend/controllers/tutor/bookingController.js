@@ -1,5 +1,5 @@
-const pool = require('../config/db');
-const { getBookingByTutor, getDetailBooking, updateStatusBooking } = require('../models/bookingModel');
+const pool = require('../../config/tutor/db');
+const { getBookingByTutor, getDetailBooking, updateStatusBooking } = require('../../models/tutor/bookingModel');
 
 const STATUS_VALID = ['Pending', 'Aktif', 'Selesai', 'Ditolak', 'Dibatalkan'];
 

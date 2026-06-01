@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const createUser = async (nama, email, hashedPassword, role) => {
     const client = await pool.connect();

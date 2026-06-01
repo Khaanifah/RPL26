@@ -1,5 +1,5 @@
-const pool = require('../config/db');
-const { getRatingTutor } = require('../models/ratingModel');
+const pool = require('../../config/tutor/db');
+const { getRatingTutor } = require('../../models/tutor/ratingModel');
 
 const getIdTutor = async (id_user) => {
     const result = await pool.query(

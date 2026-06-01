@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const getJadwalByTutor = async (id_tutor) => {
     const result = await pool.query(

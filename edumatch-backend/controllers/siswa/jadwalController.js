@@ -1,4 +1,4 @@
-const { getJadwalTutor, getJadwalTersedia } = require('../models/jadwalModel');
+const { getJadwalTutor, getJadwalTersedia } = require('../../models/siswa/jadwalModel');
 
 const jadwalTutor = async (req, res) => {
     try {

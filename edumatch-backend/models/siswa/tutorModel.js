@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const getAllTutors = async (mapel, hari) => {
     let query = `

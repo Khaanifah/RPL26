@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const getProfilTutor = async (id_user) => {
     const result = await pool.query(

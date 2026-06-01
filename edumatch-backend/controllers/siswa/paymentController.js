@@ -1,6 +1,6 @@
 const midtransClient = require('midtrans-client');
-const { createPayment, getPaymentByBooking, updatePaymentStatus } = require('../models/paymentModel');
-const pool = require('../config/db');
+const { createPayment, getPaymentByBooking, updatePaymentStatus } = require('../../models/siswa/paymentModel');
+const pool = require('../../config/siswa/db');
 
 const snap = new midtransClient.Snap({
     isProduction: process.env.MIDTRANS_IS_PRODUCTION === 'true',

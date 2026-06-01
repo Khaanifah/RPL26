@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/siswa/db');
 
 const createBooking = async (id_siswa, id_tutor, id_jadwal, tanggal) => {
     const cekKetersediaan = await pool.query(

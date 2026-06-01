@@ -1,5 +1,5 @@
-const { createRating, getRatingByTutor } = require('../models/ratingModel');
-const pool = require('../config/db');
+const { createRating, getRatingByTutor } = require('../../models/siswa/ratingModel');
+const pool = require('../../config/siswa/db');
 
 const buatRating = async (req, res) => {
     try {

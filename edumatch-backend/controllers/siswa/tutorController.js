@@ -1,4 +1,4 @@
-const { getAllTutors, getTutorById } = require('../models/tutorModel');
+const { getAllTutors, getTutorById } = require('../../models/siswa/tutorModel');
 
 const getDaftarTutor = async (req, res) => {
     try {

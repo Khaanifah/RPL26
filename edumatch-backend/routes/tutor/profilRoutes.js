@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { lihatProfil, updateProfil, gantiPassword } = require('../controllers/profilController');
-const { verifyTutor } = require('../middlewares/authMiddleware');
+const { lihatProfil, updateProfil, gantiPassword } = require('../../controllers/tutor/profilController');
+const { verifyTutor } = require('../../middlewares/tutor/authMiddleware');
 
 router.get('/', verifyTutor, lihatProfil);
 router.put('/', verifyTutor, updateProfil);

@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const getBookingByTutor = async (id_tutor, status) => {
     let query = `

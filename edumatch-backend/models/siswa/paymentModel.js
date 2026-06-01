@@ -1,4 +1,4 @@
-const pool = require('../config/db');
+const pool = require('../../config/tutor/db');
 
 const createPayment = async (id_booking, jumlah, metode) => {
     const result = await pool.query(

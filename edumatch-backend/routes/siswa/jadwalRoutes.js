@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { jadwalTutor, jadwalTersedia } = require('../controllers/jadwalController');
-const { verifyToken } = require('../middlewares/authMiddleware');
+const { jadwalTutor, jadwalTersedia } = require('../../controllers/siswa/jadwalController');
+const { verifyToken } = require('../../middlewares/siswa/authMiddleware');
 
 router.get('/:id_tutor', verifyToken, jadwalTutor);
 router.get('/:id_tutor/tersedia', verifyToken, jadwalTersedia);

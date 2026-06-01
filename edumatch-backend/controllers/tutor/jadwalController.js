@@ -1,5 +1,5 @@
-const pool = require('../config/db');
-const { getJadwalByTutor, tambahJadwal, updateJadwal, hapusJadwal } = require('../models/jadwalModel');
+const pool = require('../../config/tutor/db');
+const { getJadwalByTutor, tambahJadwal, updateJadwal, hapusJadwal } = require('../../models/tutor/jadwalModel');
 
 const HARI_VALID = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'];
 

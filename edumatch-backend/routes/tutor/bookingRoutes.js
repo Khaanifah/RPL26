@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { lihatBooking, detailBooking, updateStatusBookingController } = require('../controllers/bookingController');
-const { verifyTutor } = require('../middlewares/authMiddleware');
+const { lihatBooking, detailBooking, updateStatusBookingController } = require('../../controllers/tutor/bookingController');
+const { verifyTutor } = require('../../middlewares/tutor/authMiddleware');
 
 router.get('/', verifyTutor, lihatBooking);
 router.get('/:id', verifyTutor, detailBooking);
